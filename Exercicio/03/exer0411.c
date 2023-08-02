@@ -11,19 +11,20 @@ void main()
     {
         if(i!=1 && i%20==0+1)
         {
-            getchar();
-            if(ch!='c' && ch!='C')
+            while(1)
             {
-             printf("Por favor precione C para continuar\n");
-            }
-            else
-            {
+                printf("Pressione C para continuar ");
+                ch=getchar();
+                if(ch=='c'||ch=='C') break;
                 system("cls");
-                printf("Precione C para continhuar \n");
             }
+             getchar();
+             system("cls");
         }
+
         printf("%d---------->%c",i,(char)i);
         putchar('\n');
+
     }
 }
 
